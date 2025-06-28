@@ -1,0 +1,6 @@
+cd blockchain
+npm init -y
+npm install --save-dev hardhat @openzeppelin/contracts
+npx hardhat
+
+# choose create basic sample project, then replace contracts/MycoDoseNFT.sol with above code
