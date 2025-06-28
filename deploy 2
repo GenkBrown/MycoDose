@@ -1,0 +1,13 @@
+async function main() {
+  const MycoDoseNFT = await ethers.getContractFactory("MycoDoseNFT");
+  const mycoDoseNFT = await MycoDoseNFT.deploy();
+  await mycoDoseNFT.deployed();
+  console.log("MycoDoseNFT deployed to:", mycoDoseNFT.address);
+}
+
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
